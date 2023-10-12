@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b4763ebb.chunk.css",
+    "main.js": "./static/js/main.6f5baf25.chunk.js",
+    "main.js.map": "./static/js/main.6f5baf25.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.8c9895b1.js",
+    "runtime-main.js.map": "./static/js/runtime-main.8c9895b1.js.map",
+    "static/css/2.4b2a26c0.chunk.css": "./static/css/2.4b2a26c0.chunk.css",
+    "static/js/2.68a86bd0.chunk.js": "./static/js/2.68a86bd0.chunk.js",
+    "static/js/2.68a86bd0.chunk.js.map": "./static/js/2.68a86bd0.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.4b2a26c0.chunk.css.map": "./static/css/2.4b2a26c0.chunk.css.map",
+    "static/css/main.b4763ebb.chunk.css.map": "./static/css/main.b4763ebb.chunk.css.map",
+    "static/js/2.68a86bd0.chunk.js.LICENSE.txt": "./static/js/2.68a86bd0.chunk.js.LICENSE.txt",
+    "static/media/Accessories.b914f412.png": "./static/media/Accessories.b914f412.png",
+    "static/media/ButtonBack.scss": "./static/media/Arrow.a8e610bf.svg",
+    "static/media/HistoryLocation.scss": "./static/media/Home.aa940014.svg",
+    "static/media/LOGO.13ce922e.svg": "./static/media/LOGO.13ce922e.svg",
+    "static/media/main.scss": "./static/media/Montserrat-Thin.9a7aece9.ttf",
+    "static/media/Phones.8478b80a.png": "./static/media/Phones.8478b80a.png",
+    "static/media/Tablets.ed3dd9df.png": "./static/media/Tablets.ed3dd9df.png",
+    "static/media/banner-accessories.9ea6ba5b.png": "./static/media/banner-accessories.9ea6ba5b.png",
+    "static/media/banner-ipad.b998b166.png": "./static/media/banner-ipad.b998b166.png",
+    "static/media/banner-iphone.520dc249.png": "./static/media/banner-iphone.520dc249.png",
+    "static/media/CartItem.scss": "./static/media/icon-plus.dea15724.svg",
+    "static/media/icon-cart.1beda4df.svg": "./static/media/icon-cart.1beda4df.svg",
+    "static/media/Search.scss": "./static/media/icon-search.66a1fd86.svg",
+    "static/media/ButtonFavorites.scss": "./static/media/icon-favourites.18a4d0a4.svg",
+    "static/media/Menu.scss": "./static/media/menu-burger.ae3154a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c9895b1.js",
+    "static/css/2.4b2a26c0.chunk.css",
+    "static/js/2.68a86bd0.chunk.js",
+    "static/css/main.b4763ebb.chunk.css",
+    "static/js/main.6f5baf25.chunk.js"
+  ]
+}
