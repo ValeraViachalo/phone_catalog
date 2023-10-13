@@ -92,6 +92,7 @@
 
       cursor: pointer;
 
+      transition: all, $effect-duration ease-in-out !important;
       @include hover(transform, scale(110%));
 
       &-image {

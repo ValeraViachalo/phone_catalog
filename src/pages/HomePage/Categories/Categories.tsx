@@ -16,9 +16,15 @@ const CATEGORIES = ['phones', 'tablets', 'accessories'];
 
 export const Categories: React.FC<Props> = ({ products }) => {
   const amountProducts = (category: string) => {
-    return products.filter(currentProduct => (
+    const preparedCategory = products.filter(currentProduct => (
       currentProduct.category === category
     )).length;
+
+    if (!preparedCategory) {
+      return 'There are no products in this category yet';
+    }
+
+    return `${preparedCategory} ${preparedCategory >= 1 ? 'models' : 'model'}`;
   };
 
   const handleImageCategory = (category: string) => {
@@ -70,7 +76,7 @@ export const Categories: React.FC<Props> = ({ products }) => {
               </h3>
 
               <p className="categories__description--subtitle">
-                {`${amountProducts(currentCategory)} models`}
+                {amountProducts(currentCategory)}
               </p>
             </div>
           </Link>
