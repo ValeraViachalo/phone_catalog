@@ -87,13 +87,15 @@
 
   - **Choose Container**
     
-    In that block, the user can choose available colors and capacities
+    In that block, the user can choose available colors
 
-    ![Colors](./src/images/for-readme/color-change-details.gif)
+      ![Colors](./src/images/for-readme/color-change-details.gif)
+
+    And capacities
     
-    ![Capacity](./src/images/for-readme/product-details-capacity.gif)
+      ![Capacity](./src/images/for-readme/product-details-capacity.gif)
 
-    - and also add to the cart or favorites
+    - And also add to the cart or favorites
 
     ![Add to Cart or Favorites](./src/images/for-readme/cart-and-favourite-in-details.gif)
 

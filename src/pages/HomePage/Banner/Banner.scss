@@ -40,13 +40,14 @@
     .control {
       &-arrow {
         border: 1px solid $c-icons;
+        background-color: $c-white;
         padding: 0 6px;
         bottom: 30px;
         opacity: 1;
 
         &:hover {
           border-color: $c-primary;
-          background: none;
+          background-color: $c-white;
         }
 
         &::before {

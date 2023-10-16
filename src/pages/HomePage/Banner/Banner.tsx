@@ -26,7 +26,7 @@ const BannerContent = [
 export const Banner = () => {
   return (
     <Carousel
-      autoPlay={false}
+      autoPlay
       showArrows
       emulateTouch
       infiniteLoop
