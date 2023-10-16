@@ -29,13 +29,16 @@
 ## Features
 
 ### Pages Fade Transition
+
 ![Page Transition](./src/images/for-readme/fade-transition.gif)
 
 ### Home Page
 - Main banner created with `React responsive carousel`
+- 
   ![Main Banner](./src/images/for-readme/banner-carousel.gif)
 
 - Categories with counters
+- 
   ![Categories](./src/images/for-readme/categories.gif)
 
 - 2 product swipers
