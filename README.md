@@ -39,6 +39,7 @@
   ![Categories](./src/images/for-readme/categories.gif)
 
 - 2 product swipers
+  
   - `Hot Prices` swiper
 
     ![Swiper First](./src/images/for-readme/product-swiper.gif)
@@ -87,9 +88,11 @@
 
   - **Choose Container**
     
-    In that block, the user can choose available colors and capacities
+    In that block, the user can choose available colors
 
     ![Colors](./src/images/for-readme/color-change-details.gif)
+
+    And capacities
     
     ![Capacity](./src/images/for-readme/product-details-capacity.gif)
 
