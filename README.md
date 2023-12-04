@@ -29,16 +29,20 @@
 ## Features
 
 ### Pages Fade Transition
+
 ![Page Transition](./src/images/for-readme/fade-transition.gif)
 
 ### Home Page
 - Main banner created with `React responsive carousel`
+- 
   ![Main Banner](./src/images/for-readme/banner-carousel.gif)
 
 - Categories with counters
+- 
   ![Categories](./src/images/for-readme/categories.gif)
 
 - 2 product swipers
+  
   - `Hot Prices` swiper
 
     ![Swiper First](./src/images/for-readme/product-swiper.gif)
@@ -89,13 +93,13 @@
     
     In that block, the user can choose available colors
 
-      ![Colors](./src/images/for-readme/color-change-details.gif)
+    ![Colors](./src/images/for-readme/color-change-details.gif)
 
     And capacities
     
-      ![Capacity](./src/images/for-readme/product-details-capacity.gif)
+    ![Capacity](./src/images/for-readme/product-details-capacity.gif)
 
-    - And also add to the cart or favorites
+    - and also add to the cart or favorites
 
     ![Add to Cart or Favorites](./src/images/for-readme/cart-and-favourite-in-details.gif)
 
