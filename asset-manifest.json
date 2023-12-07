@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1b872d92.chunk.css",
+    "main.js": "./static/js/main.5fc457b8.chunk.js",
+    "main.js.map": "./static/js/main.5fc457b8.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.32d47ad4.js",
+    "runtime-main.js.map": "./static/js/runtime-main.32d47ad4.js.map",
+    "static/css/2.45c533b7.chunk.css": "./static/css/2.45c533b7.chunk.css",
+    "static/js/2.5652f7a5.chunk.js": "./static/js/2.5652f7a5.chunk.js",
+    "static/js/2.5652f7a5.chunk.js.map": "./static/js/2.5652f7a5.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.45c533b7.chunk.css.map": "./static/css/2.45c533b7.chunk.css.map",
+    "static/css/main.1b872d92.chunk.css.map": "./static/css/main.1b872d92.chunk.css.map",
+    "static/js/2.5652f7a5.chunk.js.LICENSE.txt": "./static/js/2.5652f7a5.chunk.js.LICENSE.txt",
+    "static/media/Accessories.b914f412.png": "./static/media/Accessories.b914f412.png",
+    "static/media/ButtonBack.scss": "./static/media/Arrow.a8e610bf.svg",
+    "static/media/HistoryLocation.scss": "./static/media/Home.aa940014.svg",
+    "static/media/LOGO-white.11c5e1b3.svg": "./static/media/LOGO-white.11c5e1b3.svg",
+    "static/media/LOGO.13ce922e.svg": "./static/media/LOGO.13ce922e.svg",
+    "static/media/main.scss": "./static/media/Montserrat-Thin.9a7aece9.ttf",
+    "static/media/Phones.8478b80a.png": "./static/media/Phones.8478b80a.png",
+    "static/media/Tablets.ed3dd9df.png": "./static/media/Tablets.ed3dd9df.png",
+    "static/media/banner-accessories.647d1019.png": "./static/media/banner-accessories.647d1019.png",
+    "static/media/banner-ipad.8e508296.png": "./static/media/banner-ipad.8e508296.png",
+    "static/media/banner-iphone.f55b0c7f.png": "./static/media/banner-iphone.f55b0c7f.png",
+    "static/media/CartItem.scss": "./static/media/icon-plus.dea15724.svg",
+    "static/media/icon-cart-white.42f0d4d7.svg": "./static/media/icon-cart-white.42f0d4d7.svg",
+    "static/media/Search.scss": "./static/media/icon-search.66a1fd86.svg",
+    "static/media/ButtonFavorites.scss": "./static/media/icon-favourites.18a4d0a4.svg",
+    "static/media/icon-moon.9594b309.svg": "./static/media/icon-moon.9594b309.svg",
+    "static/media/icon-sun.a6529ac8.svg": "./static/media/icon-sun.a6529ac8.svg",
+    "static/media/Menu.scss": "./static/media/menu-burger.ae3154a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32d47ad4.js",
+    "static/css/2.45c533b7.chunk.css",
+    "static/js/2.5652f7a5.chunk.js",
+    "static/css/main.1b872d92.chunk.css",
+    "static/js/main.5fc457b8.chunk.js"
+  ]
+}
