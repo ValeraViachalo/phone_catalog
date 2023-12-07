@@ -65,7 +65,6 @@ export const Menu: React.FC = () => {
   const { cart } = useContext(CartContext);
   const { favorites } = useContext(FavoriteContext);
 
-
   const toggleSwitch = () => {
     setIsOn(!isOn);
     getThemeToggle();
@@ -77,10 +76,10 @@ export const Menu: React.FC = () => {
   };
 
   const spring = {
-    type: "spring",
+    type: 'spring',
     stiffness: 700,
-    damping: 30
-  };  
+    damping: 30,
+  };
 
   return (
     <div className="menu">
@@ -147,12 +146,17 @@ export const Menu: React.FC = () => {
             </li>
           ))}
 
-          <div className="menu__switch_theme" onClick={toggleSwitch}>
-            <div className="menu__switch" data-isOn={isOn} >
-              <motion.div className="menu__switch_handle" layout transition={spring} />  
-            </div>
+          <div className="menu__switch_theme">
+            <button
+              className="menu__switch"
+              data-isOn={isOn}
+              onClick={toggleSwitch}
+              aria-label="switch"
+            >
+              <motion.div className="menu__switch_handle" layout transition={spring} />
+            </button>
             <span className="menu__switch_theme_title">
-              {getTheme()} mode
+              {`${getTheme()} mode`}
             </span>
           </div>
         </ul>

@@ -22,8 +22,8 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     const initialTheme = localStorage.getItem('theme');
 
     return initialTheme || window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
+      ? 'dark'
+      : 'light';
   });
 
   useEffect(() => {
