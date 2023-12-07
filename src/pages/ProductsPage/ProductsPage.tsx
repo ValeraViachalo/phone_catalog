@@ -40,8 +40,6 @@ export const ProductsPage: React.FC<Props> = ({
 
               {!isLoading && !isError && (
                 <List
-                  isLoading={isLoading}
-                  isError={isError}
                   products={products}
                 />
               )}

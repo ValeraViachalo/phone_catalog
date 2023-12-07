@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import classNames from 'classnames';
 import React, { useContext, useState } from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import './Menu.scss';
 import { CartContext } from '../../../contexts/CartContextProvider';
 import { FavoriteContext } from '../../../contexts/FavoriteContextProvider';
+import { useTheme } from '../../../contexts/ThemeContext';
 
 const navigation = [
   'home',
@@ -24,6 +26,31 @@ const navigationAction: ContextKey[] = [
 export const Menu: React.FC = () => {
   const classListBody = document.body.classList;
   const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [isOn, setIsOn] = useState(false);
+
+  const themeContext = useTheme();
+
+  const getTheme = () => {
+    if (themeContext) {
+      const { theme } = themeContext;
+      const themeMode = theme;
+
+      return themeMode;
+    }
+
+    return 'light';
+  };
+
+  const getThemeToggle = () => {
+    if (themeContext) {
+      const { toggleTheme } = themeContext;
+      const themeFunction = toggleTheme();
+
+      return themeFunction;
+    }
+
+    return null;
+  };
 
   const handleOpenMenu = () => {
     setIsActiveMenu(true);
@@ -38,10 +65,22 @@ export const Menu: React.FC = () => {
   const { cart } = useContext(CartContext);
   const { favorites } = useContext(FavoriteContext);
 
+
+  const toggleSwitch = () => {
+    setIsOn(!isOn);
+    getThemeToggle();
+  };
+
   const contexts = {
     favorites,
     cart,
   };
+
+  const spring = {
+    type: "spring",
+    stiffness: 700,
+    damping: 30
+  };  
 
   return (
     <div className="menu">
@@ -107,6 +146,15 @@ export const Menu: React.FC = () => {
               </NavLink>
             </li>
           ))}
+
+          <div className="menu__switch_theme" onClick={toggleSwitch}>
+            <div className="menu__switch" data-isOn={isOn} >
+              <motion.div className="menu__switch_handle" layout transition={spring} />  
+            </div>
+            <span className="menu__switch_theme_title">
+              {getTheme()} mode
+            </span>
+          </div>
         </ul>
       </div>
     </div>

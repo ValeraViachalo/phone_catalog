@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from '../../../types/Product';
-import { ProductTitles } from '../../../types/ProductTitles';
 
 import './Card.scss';
 
@@ -12,7 +11,6 @@ import { handleBackToTop } from '../../../helpers/handleToUp';
 
 type Props = {
   product: Product,
-  title?: ProductTitles,
 };
 
 export const ProductCard: React.FC<Props> = ({

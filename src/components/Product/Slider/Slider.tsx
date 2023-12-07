@@ -66,7 +66,6 @@ export const ProductSlider: React.FC<Props> = ({
           key={currentProduct.id}
         >
           <ProductCard
-            title={title}
             product={currentProduct}
           />
         </SwiperSlide>

@@ -12,14 +12,11 @@ import { getSortedProducts } from '../../../helpers/getSortedProducts';
 import { DropDown } from '../../DropDown';
 import { itemsOnPage, sortParam } from '../../../types/SortTypes';
 import { ProductCard } from '../Card';
-import { ProductTitles } from '../../../types/ProductTitles';
 import { Pagination } from '../../Pagination';
 import { Product } from '../../../types/Product';
 
 type Props = {
   products: Product[],
-  isError: boolean,
-  isLoading: boolean,
 };
 
 export const List: React.FC<Props> = ({ products }) => {
@@ -101,7 +98,7 @@ export const List: React.FC<Props> = ({ products }) => {
               className="product-list--item"
             >
               <ProductCard
-                title={ProductTitles.HotPrice}
+                // title={ProductTitles.HotPrice}
                 product={currentProduct}
               />
             </li>

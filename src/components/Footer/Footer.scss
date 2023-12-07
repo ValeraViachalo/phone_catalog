@@ -6,7 +6,7 @@
 
   height: 96px;
 
-  border: 1px solid $c-elements;
+  border-top: 1px solid $c-elements;
 
   @include onMobile {
     height: 160px;
@@ -44,6 +44,6 @@
 
 .dark {
   .footer {
-    background-color: $c-primary;
+    background-color: $c-black;
   }
 }

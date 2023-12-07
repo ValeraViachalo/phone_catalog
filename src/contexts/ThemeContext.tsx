@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from 'react';
 
 interface IThemeContext {
   theme: string;
@@ -13,25 +19,32 @@ interface ThemeProviderProps {
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<string>(() => {
-		const initialTheme = localStorage.getItem("theme");
-		return initialTheme ? initialTheme : "light";
-	});
+    const initialTheme = localStorage.getItem('theme');
+
+    return initialTheme || window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
+  });
 
   useEffect(() => {
     const appClass = document.querySelector('.app');
+
     if (appClass) {
-      appClass.classList.remove("light", "dark");
+      appClass.classList.remove('light', 'dark');
       appClass.classList.add(theme);
     }
+
     window.localStorage.setItem('theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme: string) => {
-			const newTheme = prevTheme === "light" ? "dark" : "light";
-			localStorage.setItem("theme", newTheme);
-			return newTheme;
-		});
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light';
+
+      localStorage.setItem('theme', newTheme);
+
+      return newTheme;
+    });
   };
 
   return (

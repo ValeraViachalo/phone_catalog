@@ -25,11 +25,11 @@
   }
 
   &__open {
-    background-image: url("../../../images/icons/menu-burger.svg");
+    background: url("../../../images/icons/menu-burger.svg") no-repeat center;
   }
 
   &__close {
-    background-image: url("../../../images/icons/icon-close.svg");
+    background: url("../../../images/icons/icon-close.svg") no-repeat center;
 
     position: absolute;
     right: 7%;
@@ -43,7 +43,7 @@
     left: 0;
     right: 0;
 
-    background-color: #fff;
+    background-color: $c-white;
     z-index: 1000;
     opacity: 0;
 
@@ -76,11 +76,7 @@
     padding: 18px 0;
 
     @extend %uppercase;
-
-    &:active {
-      background-color: $c-hover_bg;
-    }
-
+  
     & > a {
       display: flex;
       align-items: center;
@@ -115,6 +111,72 @@
     &--link {
       &-active {
         color: $c-primary !important;
+      }
+    }
+  }
+
+  &__switch_theme {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+
+    &_title {
+      @extend %uppercase;
+    }
+  }
+
+  &__switch {
+    width: 46px;
+    height: 22px;
+    background-color: $c-primary;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    padding: 6px;
+    cursor: pointer;
+    align-items: center;
+
+    &[data-isOn="true"] {
+      justify-content: flex-end;
+    }
+
+    &_handle {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      background-color: $c-white;
+      border-radius: 40px;
+      
+    }
+  }  
+}
+
+.dark {
+  .menu {
+    &__content {
+      background-color: $background-dark;
+    }
+
+    &__open {
+      background-image: url("../../../images/icons/menu-burger-white.svg");
+    }
+
+    &__item {
+      &--link {
+        color: $c-elements;
+
+        &-active {
+          color: $c-secondary;
+        }
       }
     }
   }
