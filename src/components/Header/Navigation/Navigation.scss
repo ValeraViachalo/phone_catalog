@@ -15,5 +15,6 @@
 
   &__item {
     @extend %uppercase;
+    color: inherit;
   }
 }

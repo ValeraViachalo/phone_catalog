@@ -68,3 +68,17 @@
     }
   }
 }
+
+.dark {
+  .cart-info--button {
+    background-color: $c-white;
+
+
+    color: $c-primary;
+
+    cursor: pointer;
+
+    @include hover(background-color, $c-primary);
+    @include hover(color, $c-white);
+  }
+}

@@ -1,7 +1,7 @@
 @import "../../../styles/global-imports";
 
 .button-to-up {
-  background-color: $c-white;
+  background-color: inherit;
   color: $c-secondary;
   @extend %small-text;
 
@@ -23,5 +23,11 @@
     background: url("../../../images/icons/Arrow.svg") no-repeat center;
 
     @include hover(border-color, $c-primary);
+  }
+}
+
+.dark {
+  .button-to-up--arrow {
+    background-image: url("../../../images/icons/Arrow-white.svg");
   }
 }

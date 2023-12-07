@@ -78,7 +78,6 @@
         }
       }
     }
-
   }
 
   .dot {
@@ -87,5 +86,30 @@
     background: $c-primary !important;
     border-radius: 0% !important;
     box-shadow: none !important;
+  }
+}
+
+.dark {
+  .banner {
+    .carousel {
+      .control {
+        &-arrow {
+          border: 1px solid $c-icons;
+          background-color:  $background-dark;
+
+          &:hover {
+            border-color: $c-white;
+          }
+
+          &::before {
+            background-image: url("../../../images/icons/Arrow-white.svg");
+          }
+        }
+      }
+
+      .dot {
+        background-color: $c-white !important;
+      }
+    }
   }
 }

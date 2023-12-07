@@ -4,6 +4,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: $background-light;
+  color: $c-primary;
+  transition: all 0.3s ease;
+
+  &.dark {
+    background-color: $background-dark;
+    color: $c-white;
+  }
 
   &__section {
     flex: 1 0 auto;

@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -36,4 +37,8 @@ select,
 option {
   margin: 0;
   padding: 0;
+}
+
+iframe {
+  display: none;
 }

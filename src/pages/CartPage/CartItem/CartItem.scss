@@ -20,7 +20,7 @@
   }
 
   &--button-delete {
-    background-color: $c-white;
+    background: none;
     height: 16px;
     width: 16px;
 
@@ -60,7 +60,7 @@
 
     &--name {
       @extend %body-text;
-      color: $c-primary;
+      color: inherit;
 
       width: 294px;
 
@@ -87,14 +87,14 @@
 
       width: 32px;
       height: 32px;
-      background-color: $c-white;
+      background: none;
       border: 1px solid $c-primary;
 
       cursor: pointer;
 
       transition: all, $effect-duration ease-in-out !important;
       @include hover(transform, scale(110%));
-
+  
       &-image {
         width: 16px;
         height: 16px;
@@ -136,5 +136,27 @@
   &--price {
     margin-left: 40px;
     min-width: 100px;
+  }
+}
+
+.dark {
+  .cart-item__amount--button {
+    border-color: $c-white;
+
+    &-image {
+      &-plus {
+        background-image: url("../../../images/icons/icon-plus-white.svg");
+      }
+      
+      &-minus {
+        background-image: url("../../../images/icons/icon-minus-white.svg");
+      }
+    }
+
+    &-decrease {
+      &-disabled {
+        border-color: $c-primary;
+      }
+    }
   }
 }

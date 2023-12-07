@@ -86,3 +86,26 @@
     @include hover(color, $c-primary);
   }
 }
+
+.dark {
+  .drop-down{
+    &--icon {
+      background-image: url("../../images/icons/Arrow-white.svg");
+    }
+
+    &__top {
+      color: inherit;
+      background-color: $c-primary;
+      border: 1px solid $c-primary;
+  
+      @include hover(border-color, $c-white);
+    }
+
+    &__content {
+      color: $c-white;
+      background-color: $c-primary;
+      border: 1px solid $c-primary;
+  
+    }
+  }
+}

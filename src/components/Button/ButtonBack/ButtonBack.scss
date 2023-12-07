@@ -5,7 +5,7 @@
   gap: 6px;
 
   padding: 40px 0 16px;
-  background-color: $c-white;
+  background: none;
   cursor: pointer;
 
   @extend %small-text;
@@ -19,4 +19,16 @@
     background: url("../../../images/icons/Arrow.svg") no-repeat center;
     transform: rotate(180deg);
   }
+}
+
+.dark {
+  .button-back {
+    color: $c-white;
+
+    @include hover(color, $c-elements);
+  
+    &--arrow {
+    background-image: url("../../../images/icons/Arrow-white.svg");
+  }
+}
 }

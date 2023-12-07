@@ -38,3 +38,24 @@
     height: 16px;
   }
 }
+
+.dark {
+  .history-location{
+    &--home-link {
+      background-image: url("../../images/icons/Home-white.svg");
+    }
+
+    &--arrow-right {
+      background-image: url("../../images/icons/Arrow-white.svg");
+    }
+
+    &--location {
+      @extend %small-text;
+      color: $c-secondary;
+  
+      &-active {
+        color: $c-white;
+      }
+    }
+  }
+}

@@ -54,3 +54,18 @@
     }
   }
 }
+
+.dark {
+  .product-slider {
+    .swiper {
+      &-button-prev,
+      &-button-next {
+        border-color: $c-white;
+
+        &::after {
+          color: $c-white;
+        }
+      }
+  }
+}
+}

@@ -6,4 +6,19 @@
   @include onDesktop {
     display: flex;
   }
+
+  .navigation-switch {
+    cursor: pointer;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    border: 1px solid #e2e5e9;
+    border-bottom: none;
+
+    &__image {
+      width: 18px;
+    }
+  }
 }

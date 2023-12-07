@@ -28,4 +28,8 @@
     color: $c-white;
     @extend %small-text;
   }
+
+  & img {
+    mix-blend-mode: difference;
+  }
 }

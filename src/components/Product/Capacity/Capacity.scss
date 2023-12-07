@@ -38,3 +38,18 @@
     @include hover(color, $c-white);
   }
 }
+
+.dark {
+  .capacity--link {
+    color: inherit;
+    border-color: inherit;
+
+    @include hover(background-color, $c-white);
+    @include hover(color, $c-primary);
+
+    &-active {
+      color: $c-primary;
+      background-color: $c-white;
+    }
+  }
+}

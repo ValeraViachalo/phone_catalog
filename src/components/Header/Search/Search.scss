@@ -71,3 +71,17 @@
     }
   }
 }
+
+.dark {
+  .Search {
+    &--input {
+      &:focus {
+        background-color: $c-elements;
+      }
+
+      &.has-icon {
+        background-image: url("../../../images/icons/icon-search-white.svg");
+      }
+    }
+  }
+}

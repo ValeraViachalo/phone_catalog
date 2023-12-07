@@ -16,3 +16,13 @@
     background-image: url("../../../images/icons/icon-favourites-active.svg");
   }
 }
+
+.dark {
+  .button-favorites {
+    background: url("../../../images/icons/icon-favourites-white.svg") no-repeat center;
+    
+    &-active {
+      background-image: url("../../../images/icons/icon-favourites-active.svg");
+    }
+  }
+}

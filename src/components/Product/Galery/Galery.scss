@@ -2,6 +2,7 @@
 
 .galery {
   display: flex;
+  gap: 20px;
 
   @include onMobile {
     flex-direction: column-reverse;

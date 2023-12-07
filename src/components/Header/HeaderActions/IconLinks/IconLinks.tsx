@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 
 import { FavoriteContext } from '../../../../contexts/FavoriteContextProvider';
-import cartIcon from '../../../../images/icons/icon-cart.svg';
+import cartIcon from '../../../../images/icons/icon-cart-white.svg';
 
 import { CartContext } from '../../../../contexts/CartContextProvider';
-import favoritesIcon from '../../../../images/icons/icon-favourites.svg';
+import favoritesIcon from '../../../../images/icons/icon-favourites-white.svg';
 
 import './IconLinks.scss';
 

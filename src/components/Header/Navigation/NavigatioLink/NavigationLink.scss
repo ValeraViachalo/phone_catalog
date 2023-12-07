@@ -46,3 +46,17 @@
     border-bottom: none;
   }
 }
+
+.dark {
+  .navigation-link {
+    color: $c-elements;
+    
+    &::after {
+      background-color: $c-secondary;
+    }
+
+    &:hover{
+      color: $c-secondary;
+    }
+  }
+}

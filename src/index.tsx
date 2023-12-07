@@ -9,12 +9,15 @@ import { FavoriteContextProvider } from './contexts/FavoriteContextProvider';
 import App from './App';
 
 import './styles/main.scss';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 ReactDOM.render(
   <Router>
     <CartContextProvider>
       <FavoriteContextProvider>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </FavoriteContextProvider>
     </CartContextProvider>
   </Router>,

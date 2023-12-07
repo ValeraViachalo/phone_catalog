@@ -101,3 +101,17 @@
     }
   }
 }
+
+.dark {
+  .product-card {
+    &__property {
+      &--title {
+        color: $c-secondary;
+      }
+  
+      &--value {
+        color: $c-white;
+      }
+    }
+  }
+}

@@ -80,3 +80,15 @@
     margin-top: 80px;
   }
 }
+
+.dark {
+  .product-details__info--item {
+    &-title {
+      color:  $c-secondary;
+    }
+
+    &-value {
+      color: $c-white;
+    }
+  }
+}
