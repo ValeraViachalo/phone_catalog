@@ -146,19 +146,22 @@ export const Menu: React.FC = () => {
             </li>
           ))}
 
-          <div className="menu__switch_theme">
-            <button
+          <button 
+            type="button"
+            aria-label="switch"
+            className="menu__switch_theme"
+            onClick={toggleSwitch}
+          >
+            <span
               className="menu__switch"
-              data-isOn={isOn}
-              onClick={toggleSwitch}
-              aria-label="switch"
+              data-isOn={isOn}              
             >
-              <motion.div className="menu__switch_handle" layout transition={spring} />
-            </button>
+              <motion.span className="menu__switch_handle" layout transition={spring} />
+            </span>
             <span className="menu__switch_theme_title">
               {`${getTheme()} mode`}
             </span>
-          </div>
+          </button>
         </ul>
       </div>
     </div>

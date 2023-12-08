@@ -21,9 +21,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<string>(() => {
     const initialTheme = localStorage.getItem('theme');
 
-    return initialTheme || window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
+    return initialTheme || 'light';
   });
 
   useEffect(() => {
