@@ -65,13 +65,14 @@
   }
 
   &__list {
-    margin-top: 50px;
+    margin-top: 20vw;
     position: relative;
-
     display: flex;
     align-items: center;
+    grid-gap: 10vw;
+    gap: 10vw;
     flex-direction: column;
-    gap: 4vw;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -85,7 +86,7 @@
       align-items: center;
       justify-content: center;
       gap: 1vw;
-      font-size: 4vw;
+      font-size: 7vw;
       line-height: normal;
       width: 98vw;
 
@@ -126,13 +127,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 2vw;
+    gap: 4vw;
 
     background: transparent;
 
     &_title {
       @extend %uppercase;
-      font-size: 3vw;
+      font-size: 5vw;
+      color: $c-primary;
     }
   }
 
