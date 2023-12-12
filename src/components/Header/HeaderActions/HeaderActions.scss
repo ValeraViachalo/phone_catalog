@@ -14,11 +14,17 @@
     justify-content: center;
     align-items: center;
     padding: 22px 24px;
-    border: 1px solid #e2e5e9;
+    border: 1px solid $c-elements;
     border-bottom: none;
 
     &__image {
       width: 18px;
     }
+  }
+}
+
+.dark {
+  .navigation-switch {
+    border: 1px solid $c-grey;
   }
 }

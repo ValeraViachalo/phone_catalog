@@ -50,7 +50,11 @@
 .dark {
   .navigation-link {
     color: $c-elements;
-    
+
+    &--icon {
+      border: 1px solid $c-grey;
+    }
+
     &::after {
       background-color: $c-secondary;
     }

@@ -104,6 +104,8 @@
 
 .dark {
   .product-card {
+    border: 1px solid $c-grey;
+
     &__property {
       &--title {
         color: $c-secondary;

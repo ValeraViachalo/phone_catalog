@@ -70,7 +70,10 @@
 }
 
 .dark {
-  .cart-info--button {
+  .cart-info {
+    border: 1px solid $c-grey;
+
+    &--button {
     background-color: $c-white;
 
 
@@ -81,4 +84,9 @@
     @include hover(background-color, $c-primary);
     @include hover(color, $c-white);
   }
+
+  &__total-price {
+    border-bottom: 1px solid $c-grey;
+  }
+}
 }
