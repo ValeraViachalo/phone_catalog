@@ -32,6 +32,10 @@
 
 ![Page Transition](./src/images/for-readme/fade-transition.gif)
 
+### Dark - Light Mode
+
+![Mode toggle](./src/images/for-readme/dark-theme.gif)
+
 ### Home Page
 - Main banner created with `React responsive carousel`
 - 
